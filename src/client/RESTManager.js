@@ -129,7 +129,7 @@ class RESTManager {
    * @param {String} stationId The station id.
    * @param {boolean} isStationStart Should be set to true if you're starting the station for the first time.
    * @param {Object} options
-   * @param {string} options.audioFormat The audio format to use. Current types are unknown.
+   * @param {string} options.audioFormat The audio format to use. //aacplus, mp3, mp3-hifi
    * @param {string} options.fragmentRequestReason Should be "Normal", other reasons currently unknown.
    * @returns {Promise<Object>}
    */

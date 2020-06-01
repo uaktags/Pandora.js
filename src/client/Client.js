@@ -124,10 +124,18 @@ class Client extends EventEmitter {
 Client.SearchTypes = {
   ALL: ["AL", "AR", "CO", "TR", "SF", "PL", "ST"],
   // What is CO??
+  // AL = Album
+  // AR = Artist
+  // CO = Composer ex: https://www.pandora.com/station/386164448323043327
+  // TR = Track
+  // SF = StationFactory
+  // PL = Playlist
+  // ST = Station
   ARTISTS: ["AR", "CO"],
   ALBUMS: ["AL"],
   TRACKS: ["TR"],
   // Can anyone explain the reasoning behind the included colons here?
+  // It's a sub-category of the main category (StationFactory:Artist, StationFactory:Composer)
   STATIONS: ["SF:AR", "SF:CO", "SF:TR", "SF:GE", "SF:HS", "SF:TT", "ST"],
   PLAYLISTS: ["PL"]
 };

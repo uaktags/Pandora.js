@@ -237,7 +237,7 @@ class Station {
    * @param {string} options.audioFormat The audioURL return format.
    * @returns {Promise<Array<Track>>}
    */
-  async getRandomTracks(isStationStart, options = {}) {
+  async getTrackList(isStationStart, options = {}) {
     const list = await this.client.rest.playlistGetFragment(this.id, isStationStart, options);
     const rTracks = [];
     for (let i = 0; i < list.tracks.length; i++) {

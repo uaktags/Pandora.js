@@ -33,7 +33,7 @@ console.log(stations.first().name);
 After you've got a station, you can then get some songs.
 Pandora gives you 5 songs on request when using this function.
 ```js
-const songs = await station.getSongList(true);
+const songs = await station.getTrackList(true);
 songs.forEach(song => {
   console.log("Song Name: " + song.title);
 });
